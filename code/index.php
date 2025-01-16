@@ -39,7 +39,7 @@
             <p class="animate__animated animate__fadeInUp" >HairlyStudio menghadirkan perawatan rambut modern dan elegan dengan <br>layanan profesional, detail sempurna, dan suasana nyaman.</p>
         </div>
         <div  class="animate__animated animate__fadeInUp" class="auth-buttons">
-          <a href="#" class="btn btn-primary">Pesan Sekarang</a>
+          <a href="transaksi.php" class="btn btn-primary">Pesan Sekarang</a>
         </div>
     </div>
   </section>  
@@ -91,7 +91,7 @@
         <img src="../asset/img-Fariz.png" alt="Fariz Oktavian">
         <div>
             <h3>10523006 - Fariz Oktavian</h3>
-            <p>JobDesk: <br><span class="jobdesk"> - Membuat halaman Landing Page <br> -  Mendesain Halaman WEB</span></p>
+            <p>JobDesk: <br><span class="jobdesk"> - Membuat halaman Landing Page <br> -  Mendesain Halaman WEB <br> - Styling Halaman Masuk dan Halaman Daftar</span></p>
         </div>
     </div>
 
@@ -126,6 +126,6 @@
           </div>
         </div>
     </div>
-  </footer>  
+  </footer>
 </body>
 </html>

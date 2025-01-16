@@ -15,7 +15,7 @@
         body {
             margin: 0;
             font-family: 'Raleway', sans-serif;
-            background-color: #6F4A8E;
+            background-color: #1f1f1f;
             display: flex;
             justify-content: center;
             align-items: center;
