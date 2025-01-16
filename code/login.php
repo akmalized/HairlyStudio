@@ -1,97 +1,116 @@
-<?php
-    include"service/database.php";
-    session_start();
-    $login_message ="";
-
-    if(isset($_SESSION["is_login"])){
-        header("location: dashbord.php");
-    }
-   if (isset($_POST['login'])){
-       $username =$_POST['username'];
-       $password =$_POST['password'];
-
-       $sql="SELECT * FROM user WHERE username='$username'
-       AND password ='$password'
-       ";
-
-       $result = $db-> query($sql);
-       if ($result-> num_rows > 0){
-        $data = $result->fetch_assoc();
-        $_SESSION["username"] =$data["username"];
-        $_SESSION["is_login"] = true;
-        header("location: dashbord.php");
-   }else{
-     $login_message= "akun tidak ditemukan silahkan daftar";
-   } 
-   $db->close();
-}
-?>
-
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HairlyStudio - Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+            }
+
+        body {
+            margin: 0;
+            font-family: 'Raleway', sans-serif;
+            background-color: #6F4A8E;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
-        h3 {
+
+        .login-container {
+            background-color: #f1f1f1;
+            width: 400px;
+            padding: 80px 32px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             text-align: center;
-            color: #333;
         }
-        i {
-            display: block;
-            text-align: center;
-            color: red;
+
+        .login-container h1 {
+            font-size: 24px;
             margin-bottom: 10px;
+            font-weight: bold;
+            color: #4A4A4A;
         }
-        form {
-            width: 300px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+
+        .login-container span {
+            color: #6F4A8E;
         }
-        input {
+
+        .login-container p {
+            color: #4A4A4A;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group input {
             width: 100%;
             padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 14px;
+            border: 1px solid #D1D1D1;
+            border-radius: 5px;
+            font-size: 16px;
         }
-        button {
-            width: 100%;
-            padding: 10px;
-            background-color: #007bff;
-            color: #fff;
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #6F4A8E;
+            box-shadow: 0 0 5px rgba(111, 74, 142, 0.5);
+        }
+
+        .login-button {
+            background-color: #6F4A8E;
+            color: #FFFFFF;
             border: none;
-            border-radius: 4px;
+            border-radius: 5px;
+            padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
+            width: 100%;
         }
-        button:hover {
-            background-color: #0056b3;
+
+        .login-button:hover {
+            background-color: #5A3C75;
+        }
+
+        .register-link {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .register-link a {
+            color: #6F4A8E;
+            text-decoration: none;
+        }
+
+        .register-link a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-
-    <?php include "layout/header.html"?>
-    <h3>MASUK AKUN</h3>
-    <i><?= $login_message ?> </i>
-    <form action="login.php" method="POST">
-        <input type="text" placeholder="username" name="username"/>
-        <input type="password" placeholder="password" name="password"/>
-        <button type="submit" name="login">MASUK SEKARANG</button>
-
-    </form>
-    <?php include "layout/footer.html"?>
+    <div class="login-container">
+        <h1>Hairly<span>Studio</span></h1>
+        <p>Nikmati layanan terbaik untuk gaya rambut Anda. Masuk untuk melanjutkan!</p>
+        <form>
+            <div class="form-group">
+                <input type="email" placeholder="Masukkan email" required>
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Masukkan Kata Sandi" required>
+            </div>
+            <button type="submit" class="login-button">Masuk</button>
+        </form>
+        <div class="register-link">
+            Tidak punya akun? <a href="register.php">Daftar Sekarang</a>
+        </div>
+    </div>
 </body>
 </html>
