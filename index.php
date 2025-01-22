@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HairlyStudio</title>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./code/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
@@ -13,7 +13,7 @@
   <header class="navbar">
     <div class="container1">
       <div class="logo">
-        <a href="index.php"><img src="../asset/logo.png" alt="HairlyStudio Logo" class="animate__animated animate__fadeInDown"></a>
+        <a href="index.php"><img src="./asset/logo.png" alt="HairlyStudio Logo" class="animate__animated animate__fadeInDown"></a>
       </div>
       <nav class="nav-links">
         <ul>
@@ -23,8 +23,8 @@
         </ul>
       </nav>
       <div class="animate__animated animate__fadeInDown" class="auth-buttons">
-        <a href="login.php" class="btn btn-secondary">Masuk</a>
-        <a href="register.php" class="btn btn-primary">Daftar</a>
+        <a href="./code/login.php" class="btn btn-secondary">Masuk</a>
+        <a href="./code/register.php" class="btn btn-primary">Daftar</a>
       </div>
     </div>
   </header>
@@ -58,13 +58,13 @@
     
     <div class="services-container">
       <div class="service-card">
-        <div><img src="../asset/Layanan-Basic.png" alt=""></div>
+        <div><img src="./asset/Layanan-Basic.png" alt=""></div>
       </div>
       <div class="service-card">
-        <div><img src="../asset/Layanan-Premium.png" alt=""></div>
+        <div><img src="./asset/Layanan-Premium.png" alt=""></div>
       </div>
       <div class="service-card">
-        <div><img src="../asset/Layanan-Ultimate.png" alt=""></div>
+        <div><img src="./asset/Layanan-Ultimate.png" alt=""></div>
       </div>
     </div>
   </section>
@@ -80,7 +80,7 @@
         </div>
     </div>
     <div class="team-member">
-        <img src="../asset/img-Agus.png" alt="Agus Fajar Rahmawan">
+        <img src="./asset/img-Agus.png" alt="Agus Fajar Rahmawan">
         <div>
             <h3>10523002 - Agus Fajar Rahmawan</h3>
             <p>JobDesk: <span class="jobdesk">Blalalala</span></p>
@@ -88,7 +88,7 @@
     </div>
 
     <div class="team-member">
-        <img src="../asset/img-Fariz.png" alt="Fariz Oktavian">
+        <img src="./asset/img-Fariz.png" alt="Fariz Oktavian">
         <div>
             <h3>10523006 - Fariz Oktavian</h3>
             <p>JobDesk: <br><span class="jobdesk"> - Membuat halaman Landing Page <br> -  Mendesain Halaman WEB <br> - Styling Halaman Masuk dan Halaman Daftar</span></p>
@@ -96,7 +96,7 @@
     </div>
 
     <div class="team-member">
-        <img src="../asset/img-Akmal.png" alt="Muhammad Akmal Ramadhan">
+        <img src="./asset/img-Akmal.png" alt="Muhammad Akmal Ramadhan">
         <div>
             <h3>10523021 - Muhammad Akmal Ramadhan</h3>
             <p>JobDesk: <br><span class="jobdesk"> - Mencintai Dia sampai mati <br> - Memberikan harapan pada dia adalah tugas saye</span></p>
@@ -109,7 +109,7 @@
   <footer class="footer">
       <div class="footer-content">
         <div class="footer-logo">
-          <img src="../asset/logo.png" alt="">
+          <img src="./asset/logo.png" alt="">
           <p>Jl. Dipati Ukur No.112-116, Lebakgede,<br>
             Kecamatan Coblong, Kota Bandung, Jawa<br>
             Barat 40132
@@ -117,9 +117,9 @@
         </div>
         <div class="sosmed">
           <div class="footer-social">
-            <a href="https://x.com/farizoktaviaan"><img src="../asset/tweeter.png" alt="tweeter"></a>
-            <a href="https://www.instagram.com/farizoktaviaan/"><img src="../asset/ig.png" alt="instagram"></a>
-            <a href="https://www.facebook.com/profile.php?id=100079199182189"><img src="../asset/facebook.png" alt="facebook"></a>
+            <a href="https://x.com/farizoktaviaan"><img src="./asset/tweeter.png" alt="tweeter"></a>
+            <a href="https://www.instagram.com/farizoktaviaan/"><img src="./asset/ig.png" alt="instagram"></a>
+            <a href="https://www.facebook.com/profile.php?id=100079199182189"><img src="./asset/facebook.png" alt="facebook"></a>
           </div>
           <div class="footer-copyright">
             <p>© 2025 — Copyright</p>

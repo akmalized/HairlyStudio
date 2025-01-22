@@ -101,7 +101,7 @@
         <p>Temukan kenyamanan memesan layanan barbershop kapan saja dan di mana saja.</p>
         <form>
             <div class="form-group">
-                <input type="username" placeholder="Masukkan Nama" required>
+                <input type="text" placeholder="Masukkan Nama" required>
             </div>
             <div class="form-group">
                 <input type="email" placeholder="Masukkan E-mail" required>
