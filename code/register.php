@@ -1,3 +1,34 @@
+<?php
+session_start();
+include 'koneksi.php';
+
+if (isset($_POST['submit'])) {
+    
+    // Ambil data dari form
+    $nama = mysqli_real_escape_string($koneksi, $_POST['nama']);
+    $email = mysqli_real_escape_string($koneksi, $_POST['email']);
+    $password = mysqli_real_escape_string($koneksi, $_POST['password']);
+
+    // Validasi jika email sudah terdaftar
+    $checkEmailQuery = "SELECT * FROM user WHERE email='$email'";
+    $result = mysqli_query($koneksi, $checkEmailQuery);
+    if (mysqli_num_rows($result) > 0) {
+        echo "<script>alert('Email sudah terdaftar!');</script>";
+    } else {
+        // Jika email belum terdaftar, lakukan insert ke database
+        $insertQuery = "INSERT INTO user (nama, email, password) VALUES ('$nama', '$email', '$password')";
+        $insertResult = mysqli_query($koneksi, $insertQuery);
+
+        if ($insertResult) {
+            echo "<script>alert('Pendaftaran berhasil!');</script>";
+            echo "<script type='text/javascript'>window.location.href = '../index.php';</script>";
+        } else {
+            echo "<script>alert('Terjadi kesalahan saat mendaftar, coba lagi nanti!');</script>";
+        }
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -99,20 +130,20 @@
     <div class="login-container">
         <h1>Hairly<span>Studio</span></h1>
         <p>Temukan kenyamanan memesan layanan barbershop kapan saja dan di mana saja.</p>
-        <form>
+        <form method="post">
             <div class="form-group">
-                <input type="text" placeholder="Masukkan Nama" required>
+                <input type="text" name="nama" placeholder="Masukkan Nama" required>
             </div>
             <div class="form-group">
-                <input type="email" placeholder="Masukkan E-mail" required>
+                <input type="email" name="email"  placeholder="Masukkan E-mail" required>
             </div>
             <div class="form-group">
-                <input type="password" placeholder="Masukkan Kata Sandi" required>
+                <input type="password" name="password" placeholder="Masukkan Kata Sandi" required>
             </div>
-            <button type="submit" class="login-button">Daftar</button>
+            <button type="submit" name="submit" class="login-button">Daftar</button>
         </form>
         <div class="register-link">
-            Sudah Punya Akun? <a href="login.php">Masuk</a>
+            Sudah Punya Akun? <a href="../index.php">Masuk</a>
         </div>
     </div>
 </body>
