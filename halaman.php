@@ -44,7 +44,7 @@ include './code/koneksi.php';
             <p class="animate__animated animate__fadeInUp" >HairlyStudio menghadirkan perawatan rambut modern dan elegan dengan <br>layanan profesional, detail sempurna, dan suasana nyaman.</p>
         </div>
         <div class="animate__animated animate__fadeInUp auth-buttons">
-          <a href="transaksi.php" class="btn btn-primary">Pesan Sekarang</a>
+          <a href="./code/pembayaran.php" class="btn btn-primary">Pesan Sekarang</a>
         </div>
     </div>
   </section>  
