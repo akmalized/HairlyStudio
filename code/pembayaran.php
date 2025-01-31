@@ -110,9 +110,104 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         .buttons button:hover {
             background-color: #d1c4e9;
         }
+
+        /* Navbar */
+        .navbar {
+            padding: 15px 0;
+            position :fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: #1f1f1f;
+        }
+
+        .container1 {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+
+        .logo img {
+            height: 40px;
+        }
+
+        .nav-links ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+
+        .nav-links a:hover {
+            color: #62518B;
+        }
+
+        .auth-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: #62518B;
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background-color: #62518B;
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: #fff;
+            border: 1px solid #fff;
+        }
+
+        .btn-secondary:hover {
+            background-color: #fff;
+            color: #1f1f1f;
+        }
     </style>
 </head>
 <body>
+
+<!-- Navbar Section -->
+<header class="navbar">
+    <div class="container1">
+      <div class="logo">
+        <a href="../halaman.php"><img src="../asset/logo.png" alt="HairlyStudio Logo" class="animate__animated animate__fadeInDown"></a>
+      </div>
+      <nav class="nav-links">
+        <ul>
+          <li class="animate__animated animate__fadeInDown"><a href="../halaman.php">Home</a></li>
+          <li class="animate__animated animate__fadeInDown"><a href="riwayat.php">Riwayat Pemesanan</a></li>
+        </ul>
+      </nav>
+      <div class="animate__animated animate__fadeInDown auth-buttons">
+        <a href="logout.php" class="btn btn-primary">Logout</a>
+      </div>
+    </div>
+  </header>
 
 <div class="payment-container">
     <h2>PEMBAYARAN</h2>

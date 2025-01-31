@@ -25,7 +25,7 @@ include './code/koneksi.php';
           <li class="animate__animated animate__fadeInDown"><a href="#hairlyStudio">Home</a></li>
           <li class="animate__animated animate__fadeInDown"><a href="#layanan">Layanan</a></li>
           <li class="animate__animated animate__fadeInDown"><a href="#tentangKami">Tentang Kami</a></li>
-          <li class="animate__animated animate__fadeInDown"><a href="#tentangKami">Riwayat Pemesanan</a></li>
+          <li class="animate__animated animate__fadeInDown"><a href="./code/riwayat.php">Riwayat Pemesanan</a></li>
         </ul>
       </nav>
       <div class="animate__animated animate__fadeInDown auth-buttons">
