@@ -87,7 +87,7 @@ include './code/koneksi.php';
         <img src="./asset/img-Agus.png" alt="Agus Fajar Rahmawan">
         <div>
             <h3>10523002 - Agus Fajar Rahmawan</h3>
-            <p>JobDesk: <span class="jobdesk">Blalalala</span></p>
+            <p>JobDesk: <br> <span class="jobdesk"> - Membuat halaman login <br> - Membuat halaman daftar</span></p>
         </div>
     </div>
 
@@ -95,7 +95,7 @@ include './code/koneksi.php';
         <img src="./asset/img-Fariz.png" alt="Fariz Oktavian">
         <div>
             <h3>10523006 - Fariz Oktavian</h3>
-            <p>JobDesk: <br><span class="jobdesk"> - Membuat halaman Landing Page <br> - Mendesain Halaman WEB <br> - Styling Halaman Masuk dan Halaman Daftar</span></p>
+            <p>JobDesk: <br><span class="jobdesk"> - Membuat halaman Landing Page <br> - Mendesain Halaman WEB <br> - Styling Halaman Masuk dan Halaman Daftar <br> - Membuat database CURD <br> - Membuat riwayat transaksi <br> - Membuat halaman transaksi </span></p>
         </div>
     </div>
 
@@ -103,7 +103,7 @@ include './code/koneksi.php';
         <img src="./asset/img-Akmal.png" alt="Muhammad Akmal Ramadhan">
         <div>
             <h3>10523021 - Muhammad Akmal Ramadhan</h3>
-            <p>JobDesk: <br><span class="jobdesk"> - Mencintai Dia sampai mati <br> - Memberikan harapan pada dia adalah tugas saye</span></p>
+            <p>JobDesk: <br><span class="jobdesk"> - Membuat halaman transaksi </span></p>
         </div>
     </div>
   </div>
