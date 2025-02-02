@@ -211,7 +211,7 @@ if (isset($_SESSION['pesan'])) {
                 <td>Rp <?= number_format($row['harga'], 0, ',', '.'); ?></td>
                 <td><?= $row['deskripsi']; ?></td>
                 <td>
-                    <a href="../deletePesanan.php?id=<?= $row['id']; ?>" onclick="return confirm('Yakin ingin menghapus?')">Hapus</a>
+                    <a href="deletePesanan.php?id=<?= $row['id']; ?>" onclick="return confirm('Yakin ingin menghapus?')">Hapus</a>
                 </td>
             </tr>
         <?php endwhile; ?>
