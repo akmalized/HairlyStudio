@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 02, 2025 at 06:27 AM
+-- Generation Time: Feb 02, 2025 at 06:35 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -58,13 +58,6 @@ CREATE TABLE `pesanan` (
   `deskripsi` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `pesanan`
---
-
-INSERT INTO `pesanan` (`id`, `nama`, `waktu`, `tipe_layanan`, `harga`, `deskripsi`) VALUES
-(7, 'Salwa Salbina', '2025-02-15', 'Basic', 50000, 'Potong Rambut dan Pijat Kepala');
-
 -- --------------------------------------------------------
 
 --
@@ -114,7 +107,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `pesanan`
 --
 ALTER TABLE `pesanan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

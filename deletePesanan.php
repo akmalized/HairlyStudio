@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'koneksi.php'; 
+include './code/koneksi.php'; 
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
